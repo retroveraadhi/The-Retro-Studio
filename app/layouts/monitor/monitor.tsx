@@ -27,7 +27,16 @@ const Monitor = () => {
             </p>
           </div>
           <div className="flex items-center justify-center w-[513px] h-[349px] border border-[#D7D6F2] bg-[#E8E7FF] shadow-inner rounded-[8px]">
-            <div className="flex w-[489px] h-[328px] border border-[#E0DFF6] bg-[#C5C5E1]/44 shadow-inner rounded-[4px]"></div>
+            <div
+              id="main-display"
+              className="relative flex w-[489px] h-[328px] border border-[#E0DFF6] bg-[#C5C5E1]/44 shadow-inner rounded-[4px] overflow-hidden"
+            >
+              <div className="flex flex-col items-center justify-center gap-0.5 w-full h-full absolute">
+                {Array.from({ length: 140 }).map((lines, idx) => {
+                  return <div className="w-full h-[2px] bg-[#C5C5E1]"></div>;
+                })}
+              </div>
+            </div>
           </div>
           <div className="flex items-center justify-end w-full h-[25px] relative">
             <div className="flex w-full items-center justify-center absolute">
@@ -77,7 +86,7 @@ const Monitor = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center w-[513px] h-[50px] bg-gradient-to-b from-[#E3E3FF] to-[#E1E1FF] rounded-b-[10px]">
+      <div className="flex items-center justify-center w-[513px] h-[50px] bg-gradient-to-b from-[#E3E3FF] to-[#E1E1FF] rounded-b-[10px] shadow-sm">
         <div className="flex items-center justify-between w-[450px] h-[23px]">
           <div className="flex w-[53px] h-full bg-[#CFCFF0] border border-[#BFBDEE]/50 rounded-full items-center justify-center p-1 gap-0.5 shadow-inner">
             {Array.from({ length: 3 }).map((item, idx) => {
