@@ -54,7 +54,7 @@ const Monitor = () => {
                 {Array.from({ length: 140 }).map((_, idx) => (
                   <motion.div
                     key={idx}
-                    className="w-full h-[2px] bg-[#b2b2db] opacity-30"
+                    className="w-full h-[2px] bg-[#aaaad4] opacity-30"
                     custom={idx}
                     variants={flicker}
                     initial="hidden"

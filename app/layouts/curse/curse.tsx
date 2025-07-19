@@ -1,9 +1,9 @@
 import React from "react";
-import Monitor from "@/app/layouts/monitor/monitor";
+import Monitor from "@/app/layouts/curse/monitor/monitor";
 
 const Curse = () => {
   return (
-    <div className="flex flex-col items-center gap-15 w-[1370px] h-[704px]">
+    <div className="flex flex-col items-center gap-15 w-[1370px] h-[704px] select-none">
       <div
         id="title-container"
         className="flex flex-col items-center justify-center"
@@ -33,3 +33,4 @@ const Curse = () => {
 };
 
 export default Curse;
+``;
