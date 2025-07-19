@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-montreal: var(--font-montreal);
   --font-bebas: var(--font-bebas);
+  --font-dmsans: var(--font-dm-sans);
 }
 
 @media (prefers-color-scheme: dark) {
